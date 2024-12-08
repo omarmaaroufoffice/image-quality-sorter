@@ -1,0 +1,10 @@
+image-quality-sorter/
+├── src/
+│   ├── __init__.py
+│   ├── image_evaluator.py
+│   ├── file_handler.py
+│   └── utils.py
+├── config/
+│   └── config.yaml
+├── main.py
+└── requirements.txt 

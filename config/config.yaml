@@ -1,0 +1,48 @@
+# API Configuration
+openai:
+  api_key: "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"
+  model: "gpt-4o-mini"
+  max_tokens: 1000
+
+# Directory Configuration
+directories:
+  output: "output"
+  logs: "logs"
+
+# Logging Configuration
+logging:
+  file: "evaluation_log.txt"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+
+prompts:
+  evaluation_prompt: |
+    Analyze the following image and provide:
+    1. Brief Description: Describe what's in the image
+    2. Individual Scores (1-10 for each):
+       - Composition
+       - Color
+       - Lighting
+       - Subject
+       - Originality
+       - Technical Skill
+       - Emotion
+       - Storytelling
+       - Clarity
+       - Creativity
+    3. Overall Score: Average of above scores (1-100)
+    4. Final Reason: Brief explanation of the overall rating
+
+    Format your response exactly as:
+    Description: [brief description]
+    Composition: [1-10]
+    Color: [1-10]
+    Lighting: [1-10]
+    Subject: [1-10]
+    Originality: [1-10]
+    Technical Skill: [1-10]
+    Emotion: [1-10]
+    Storytelling: [1-10]
+    Clarity: [1-10]
+    Creativity: [1-10]
+    Score: [1-100]
+    Reason: [final explanation]
